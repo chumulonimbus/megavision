@@ -3,9 +3,18 @@
 ```
 git clone https://github.com/chumulonimbus/megavision.git
 ```
-### 2. Clone Repository
-
-
+### 2. Install Dependecy
+Pastikan composer sudah terinstal di device anda
+```
+composer install
+```
+### 3. Import File SQL
+``
+1. Buka phpmysql
+2. Buat database baru misal megavision
+3. Klik tab import
+4. Unggah file sql
+``
 
 # CodeIgniter 4 Application Starter
 
