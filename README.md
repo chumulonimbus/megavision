@@ -1,6 +1,6 @@
 ## Langkah Instalasi & Setup
 ### 1. Clone Repository
-```bash git clone [https://github.com/username-anda/nama-repo.git](https://github.com/username-anda/nama-repo.git)cd nama-repo```
+```git clone https://github.com/chumulonimbus/megavision.git```
 ### 2. Clone Repository
 
 
