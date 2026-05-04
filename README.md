@@ -1,3 +1,7 @@
+## Langkah Instalasi & Setup
+### 1. Clone Repository
+
+
 # CodeIgniter 4 Application Starter
 
 ## What is CodeIgniter?
