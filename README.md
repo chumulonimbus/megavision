@@ -15,6 +15,13 @@ composer install
 3. Klik tab import
 4. Unggah file sql
 </pre>
+### 3. Setup File Project
+<pre>
+1. Rename file env menjadi .env
+2. Buka file .env tersebut kemudian cari bagian **database.default.database**
+3. Sesuaikan nama database dengan database yang baru saja dibuat
+4. Jika sudah simpan lalu tutup file tersebut
+</pre>
 
 # CodeIgniter 4 Application Starter
 
