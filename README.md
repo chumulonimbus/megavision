@@ -1,6 +1,8 @@
 ## Langkah Instalasi & Setup
 ### 1. Clone Repository
-```git clone https://github.com/chumulonimbus/megavision.git```
+```
+git clone https://github.com/chumulonimbus/megavision.git
+```
 ### 2. Clone Repository
 
 
