@@ -2,7 +2,7 @@
 ### 1. Clone Repository
 ```bash
 git clone [https://github.com/username-anda/nama-repo.git](https://github.com/username-anda/nama-repo.git)
-cd nama-repo
+cd nama-repo```
 ### 2. Clone Repository
 
 
