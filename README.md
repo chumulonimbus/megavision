@@ -4,7 +4,7 @@
 git clone https://github.com/chumulonimbus/megavision.git
 ```
 ### 2. Install Dependecy
-Pastikan composer sudah terinstal di device anda
+Pastikan composer sudah terinstal di device anda. Jalankan perintah ini di terminal projek berada
 ```
 composer install
 ```
@@ -23,9 +23,13 @@ composer install
 4. Jika sudah simpan lalu tutup file tersebut
 </pre>
 ### 5. Run the Project
+Jalankan perintah ini di terminal projek berada
 ```
 php spark serve
 ```
+<br>
+<br>
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # CodeIgniter 4 Application Starter
 
