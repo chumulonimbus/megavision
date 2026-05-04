@@ -29,7 +29,7 @@ php spark serve
 ```
 <br>
 <br>
----
+<hr>
 
 # CodeIgniter 4 Application Starter
 
