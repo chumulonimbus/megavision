@@ -9,12 +9,12 @@ Pastikan composer sudah terinstal di device anda
 composer install
 ```
 ### 3. Import File SQL
-``
+```text
 1. Buka phpmysql
 2. Buat database baru misal megavision
 3. Klik tab import
 4. Unggah file sql
-``
+```
 
 # CodeIgniter 4 Application Starter
 
