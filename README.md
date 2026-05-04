@@ -1,5 +1,10 @@
 ## Langkah Instalasi & Setup
 ### 1. Clone Repository
+```bash
+git clone [https://github.com/username-anda/nama-repo.git](https://github.com/username-anda/nama-repo.git)
+cd nama-repo
+### 2. Clone Repository
+
 
 
 # CodeIgniter 4 Application Starter
