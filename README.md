@@ -27,6 +27,16 @@ Jalankan perintah ini di terminal projek berada
 ```
 php spark serve
 ```
+### 6. Login Dashboard
+<pre>
+1. Buka browser kemudian buka http://localhost:8080/
+2. Login ke dashboard dengan account berikut
+</pre>
+Account developement
+<pre>
+email: admin@megavision
+password: Admin123!
+</pre>
 <br>
 <br>
 <hr>
