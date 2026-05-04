@@ -34,7 +34,7 @@
         </div>
     </div>
 
-    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-200">
+    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-200 mb-6">
         <div class="header mb-4">
             <p class="text-xl text-gray-600 font-semibold mb-0">Sales Performance</p>
         </div>
@@ -320,7 +320,18 @@
 
     document.addEventListener("DOMContentLoaded", ()=>{
         getData()
-        getReportSales()
+        // real data
+        // getReportSales()
+
+        // chart hardcode
+        const labels = ['Jan', 'Feb', 'Mar', 'Apr', 'May']
+        const datasets = [
+            { label: 'Sales A', data: [30, 50, 40, 70, 50], borderColor: '#6b7280', tension: 0.4 },
+            { label: 'Sales B', data: [40, 70, 50, 80, 60], borderColor: '#d97706', tension: 0.4 },
+            { label: 'Sales C', data: [50, 60, 45, 90, 40], borderColor: '#db2777', tension: 0.4 },
+            { label: 'Sales D', data: [20, 40, 30, 60, 70], borderColor: '#2563eb', tension: 0.4 }
+        ]
+        renderSalesChart(datasets, labels)
     })
 </script>
 <?= $this->endSection() ?>
