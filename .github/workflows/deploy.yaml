@@ -1,0 +1,62 @@
+# name: CI/CD CI4
+
+# on:
+#   push:
+#     branches: ["main"]
+
+# jobs: 
+#   # ==========================================================================
+#   # Tahap 1: CONTINUOUS INTEGRATION (CI) - BUILD & TEST
+#   # ==========================================================================
+#   build:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#     - name: Ambil Code dari repository
+#       uses: actions/checkout@v2
+
+#     - name: Setup PHP 8.1
+#       uses: shivammathur/setup-php@v2
+#       with:
+#         php-version: '8.1'
+#         extentions: mbstring, intl, json
+
+#     - name: Validasi file composer
+#       run: composer validate --strict
+
+#     - name: Install dependencies
+#       run: composer install --prefer-dist --no-progress --no-dev --optimaze-autoloader
+
+#     # (Opsinal) Jalankan jika project membuat/memerlukan unit test
+#     # - name: Jalankan Unit Test
+#     #   run: vendor/bin/phpunit
+
+#   # ==========================================================================
+#   # Tahap 2: CONTINUOUS DEPLOYMENT (CD) - DEPLOY TO PRODUCTION
+#   # ==========================================================================
+#   deploy:
+#     name: Deploy to production
+#     needs: build # Kondisi untuk memastikan tahap deploy hanya berjalan jika tahap build sukses
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: Eksekusi Perintah di VPS via SSH
+#         uses: appleboy/ssh-action@master
+#         with:
+#           host: ${{ secrets.SERVER_HOST }}
+#           username: ${{ secrets.SERVER_USER }}
+#           key: ${{ secrets.SERVER_SSH_KEY }}
+#           port: 22
+#           # Script di bawah ini akan dijalankan secara otomatis di dalam VPS/Server-mu
+#           script: |
+#             # 1. Masuk ke folder project di server (sesuaikan path-nya)
+#             cd /var/www/megavision
+            
+#             # 2. Tarik update kode terbaru dari GitHub
+#             git pull origin main
+            
+#             # 3. Install library baru jika ada update di composer.json
+#             composer install --no-dev --optimize-autoloader
+            
+#             # 4. Jalankan migrasi database otomatis jika ada tabel baru
+#             php spark migrate
