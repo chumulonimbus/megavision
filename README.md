@@ -34,7 +34,7 @@ php spark serve
 </pre>
 Account developement
 <pre>
-email: admin@megavision
+email: admin@megavision.com
 password: Admin123!
 </pre>
 <br>
